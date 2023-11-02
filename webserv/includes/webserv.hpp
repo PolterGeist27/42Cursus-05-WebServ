@@ -1,23 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   webserv.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 14:27:49 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/02 11:45:12 by diogmart         ###   ########.fr       */
+/*   Created: 2023/11/02 11:44:36 by diogmart          #+#    #+#             */
+/*   Updated: 2023/11/02 11:45:04 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "webserv.hpp"
+#pragma once
 
-int main(int argc, char **argv) {
-    
-    if (argc != 2) {
-        std::cout << "Error: wrong number of arguments.\nTry: \"./webserv [configuration file]\"" << std::endl;
-        return (1);
-    }
-
-    
-}
+#include <iostream>
+#include <sys/socket.h>
