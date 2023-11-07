@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:27:49 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/02 11:45:12 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/07 12:13:46 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ int main(int argc, char **argv) {
         std::cout << "Error: wrong number of arguments.\nTry: \"./webserv [configuration file]\"" << std::endl;
         return (1);
     }
-
+    (void)argv;
     
 }

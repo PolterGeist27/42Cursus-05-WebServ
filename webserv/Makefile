@@ -25,7 +25,7 @@ VPATH			= $(SRCS)
 OBJ_DIR			= bin
 
 #_/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_ FILES _/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_/=\_
-NAME			= interface
+NAME			= webserv
 _FILES			= main
 OBJS			= $(_FILES:%=%.o)
 TARGET			= $(addprefix $(OBJ_DIR)/, $(OBJS))
