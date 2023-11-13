@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   webserv.hpp                                        :+:      :+:    :+:   */
+/*   error.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 11:44:36 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/13 16:00:00 by diogmart         ###   ########.fr       */
+/*   Created: 2023/11/13 11:59:01 by diogmart          #+#    #+#             */
+/*   Updated: 2023/11/13 12:00:04 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#include "webserv.hpp"
 
-#include <iostream>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdlib.h>
+void log(const std::string &message)
+{
+    std::cout << message << std::endl;
+}
 
-#include <arpa/inet.h>
-
-
-
-//      error.cpp
-void exitWithError(const std::string &errorMessage);
-void log(const std::string &message);
+void exitWithError(const std::string &errorMessage)
+{
+    log("ERROR: " + errorMessage);
+    exit(1);
+}
