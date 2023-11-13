@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:24:39 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/13 15:39:03 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/13 16:00:16 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ class TcpServer {
         struct sockaddr_in m_sockaddr;
         unsigned int m_sockaddr_len;
         
+        //int m_clientSocket;
+        //struct sockaddr_in m_clientAddress;
+
         int setupServer(void);
         void closeServer(void);
         void startListen(void);

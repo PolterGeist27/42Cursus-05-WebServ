@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:44:36 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/13 12:09:16 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/13 16:00:00 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 #include <arpa/inet.h>
 
