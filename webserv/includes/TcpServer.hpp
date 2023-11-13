@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:24:39 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/07 12:31:52 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/13 12:14:08 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,16 @@ HTTP Server:
 
 class TcpServer {
 
-    private:
-
     public:
-        TcpServer();
+        TcpServer(const std::string& ip_address, int port);
         ~TcpServer();
-
+    
+    private:
+        std::string m_ip_address;
+        int m_port;
+        int m_socket;
+        struct sockaddr_in m_sockaddr;
+        
+        int setupServer(void);
+        void closeServer(void);
 };
