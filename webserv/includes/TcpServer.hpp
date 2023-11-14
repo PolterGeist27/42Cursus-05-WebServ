@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:24:39 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/13 16:00:16 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:09:51 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,7 @@ class TcpServer {
         void closeServer(void);
         void startListen(void);
         void acceptConnection(void);
+
+        std::string buildResponse(void);
+        void sendResponse(void);
 };

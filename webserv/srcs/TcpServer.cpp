@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:27:31 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/13 15:42:30 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:12:50 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,15 @@ void TcpServer::startListen(void) {
 void TcpServer::acceptConnection(void) {
     // We need to accept the connection, store the new socket fd in a variable
     // and the new socket address in another struct ?
+}
+
+std::string TcpServer::buildResponse(void) {
+    // The response should start with "HTTP/1.1 200 OK" if the resquest is successful.
+    // Then there should be some more stuff, it could be a html file or something else
+}
+
+void TcpServer::sendResponse(void) {
+    // We should use the send() function instead of write() as it gives us more
+    // option on how to handle the content we send as well as being particularly 
+    // useful for working with network sockets, such as those used in HTTP server development.
 }
