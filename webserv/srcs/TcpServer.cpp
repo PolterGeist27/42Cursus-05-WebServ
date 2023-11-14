@@ -6,7 +6,7 @@
 /*   By: diogmart <diogmart@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:27:31 by diogmart          #+#    #+#             */
-/*   Updated: 2023/11/14 14:12:50 by diogmart         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:16:04 by diogmart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,16 @@ void TcpServer::acceptConnection(void) {
 std::string TcpServer::buildResponse(void) {
     // The response should start with "HTTP/1.1 200 OK" if the resquest is successful.
     // Then there should be some more stuff, it could be a html file or something else
+
+/*
+    Basically, responses consist of the following elements:
+
+    -The version of the HTTP protocol they follow.
+    -A status code, indicating if the request was successful or not, and why.
+    -A status message, a non-authoritative short description of the status code.
+    -HTTP headers, like those for requests.
+    -Optionally, a body containing the fetched resource.
+*/
 }
 
 void TcpServer::sendResponse(void) {
